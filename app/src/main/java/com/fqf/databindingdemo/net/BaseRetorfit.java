@@ -42,6 +42,7 @@ public class BaseRetorfit {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
             builder.addInterceptor(logging);
+            ///
         }
         builder.connectTimeout(5000,TimeUnit.SECONDS);
         builder.readTimeout(5000, TimeUnit.SECONDS);
